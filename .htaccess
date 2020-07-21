@@ -1,0 +1,5 @@
+# FORÇA O USO DE SSL NO .HTACCESS#
+# FORCE THE USE OF SSL IN .HTACCESS #
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 443
+RewriteRule ^(.*)$ https://exemplo.com/$1 [R,L]
